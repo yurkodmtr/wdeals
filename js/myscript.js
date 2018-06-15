@@ -20,6 +20,12 @@ var myScript = function(){
 			margin:0,
 			nav:true
 		});
+		$('.slider_plans').owlCarousel({
+			loop:true,
+			items:1,
+			margin:0,
+			nav:true
+		});
 	});
 }
 
