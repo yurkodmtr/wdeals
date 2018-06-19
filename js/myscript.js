@@ -2,12 +2,28 @@
 
 var myScript = function(){
 
+	var menuToggle = function(){
+		$('.mobile_menu_toggle').click(function(){
+			if ( $(this).hasClass('act') ) {
+				$('body').css('overflow','visible');
+				$(this).removeClass('act');
+				$('.mobile_menu').fadeOut();
 
-	$(window).load(function(){
+			} else {
+				$('body').css('overflow','hidden');
+				$(this).addClass('act');
+				$('.mobile_menu').fadeIn();
+				
+			}
+		});
+	}
 
-	});
+
+	
 
 	$(document).ready(function(){
+		menuToggle();
+
 		$('.slider_site__carousel').owlCarousel({
 			loop:true,
 			items:1,
@@ -26,6 +42,10 @@ var myScript = function(){
 			margin:0,
 			nav:true
 		});
+	});
+
+	$(window).load(function(){
+
 	});
 }
 

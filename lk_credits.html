@@ -36,9 +36,47 @@
 	<div class="pages">
 
 		<header class="header">
-			<div class="center">
-				header
+			<div class="header__shadow">
+				<div class="center">
+					<a href="#" class="logo">
+						<img src="images/logo.png" alt="">
+					</a>
+					<div class="phone">
+						8-800-355-46-57
+					</div>
+					<div class="tm">
+						Личный кабинет | <a href="#">ООО “Интернет-магазин”</a>
+					</div>
+					<a href="#" class="logout">
+						Выйти
+					</a>
+					<div class="mobile_menu_toggle">
+						<i></i>
+					</div>
+				</div>
 			</div>
+			
+			<div class="mobile_menu">
+				<div class="mobile_menu__top">
+					Личный кабинет | <a href="#">ООО “Интернет-магазин”</a>
+				</div>
+				<div class="mobile_menu__mid">
+					<ul>						
+						<li><a href="#">Ваш Тариф</a></li>
+						<li><a href="#">Настройки виджета</a></li>
+						<li><a href="#" class="act">дизайн виджета</a></li>
+						<li><a href="#">Статистика и аналитика</a></li>
+						<li><a href="#">Счета и акты</a></li>
+						<li><a href="#">Инструкция и код виджета</a></li>
+						<li><a href="#">Личные данные</a></li>
+					</ul>	
+				</div>
+				<div class="mobile_menu__bottom">
+					<a href="#">
+						Выйти
+					</a>
+				</div>
+			</div>			
 		</header>
 
 		<div class="pages__nav">
@@ -57,9 +95,9 @@
 			</div>
 			<div class="pages__nav__item">
 				<div class="center">
-					<a href="#" class="prev"></a>
-					<span>Ваш Тариф</span>
-					<a href="#" class="next"></a>
+					<a href="#" class="link prev"></a>
+					<span class="current_page">Ваш Тариф</span>
+					<a href="#" class="link next"></a>
 				</div>
 			</div>			
 		</div>
@@ -89,6 +127,7 @@
 						<div class="form__row">
 							<input type="text" placeholder="8 (920) 675-34-__" class="input">
 							<div class="add_row btn btn__blue_transparent">добавить</div>
+							<div class="add_row_fixed">добавить</div>
 						</div>
 						<div class="form__row">
 							<input type="text" placeholder="shop@internet-shop.ru" class="input">
@@ -109,7 +148,12 @@
 
 <footer class="pages__footer">
 	<div class="center">
-		footer
+		<div class="footer__top">
+			ООО “Виджет Дилз” <span> | </span> <a href="#">Москва, Воротниковский пер., 10</a>
+		</div>
+		<div class="footer__bottom">
+			Widget.Deals ® Технология запатентована. <br>Все права защищены
+		</div>
 	</div>
 </footer>
 
