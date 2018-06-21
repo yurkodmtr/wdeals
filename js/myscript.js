@@ -18,11 +18,22 @@ var myScript = function(){
 		});
 	}
 
+	var pageBillToggleItems = function(){
+		$('.pages .page_bill .phone_content .item .title').click(function(){
+			if ( $(this).hasClass('act') ) {
+				$(this).removeClass('act').next().slideUp();
+			} else {
+				$(this).addClass('act').next().slideDown();				
+			}
+		});
+	}
+
 
 	
 
 	$(document).ready(function(){
 		menuToggle();
+		pageBillToggleItems();
 
 		$('.slider_site__carousel').owlCarousel({
 			loop:true,
