@@ -1910,6 +1910,9 @@ body {
 	@media screen and (max-width: 1300px) and (min-width: 640px) {
 		padding-top:79px;
 	}
+	@media screen and (max-width: 639px) {
+		padding-top:79px;
+	}
 	.header {
 		position:fixed;
 		left:0px;
@@ -1923,6 +1926,9 @@ body {
 			position:relative;
 			z-index:2;
 			@media screen and (max-width: 1300px) and (min-width: 640px) {
+				padding:21px 0px 20px 0px;
+			}
+			@media screen and (max-width: 639px) {
 				padding:21px 0px 20px 0px;
 			}
 		}			
@@ -1942,12 +1948,19 @@ body {
 				width:150px;
 				margin-right:20px;
 			}
+			@media screen and (max-width: 639px) {
+				width:150px;
+				margin-right:0px;
+			}
 		}
 		.phone {
 			font-size:16px;
 			.semi-bold;
 			color:@darkblue;
 			margin-right:275px;
+			@media screen and (max-width: 639px) {
+				display:none;
+			}
 		}
 		.tm {
 			font-size:16px;
@@ -1977,6 +1990,9 @@ body {
 			}
 			@media screen and (max-width: 1300px) and (min-width: 640px) {
 				right:50px;
+			}
+			@media screen and (max-width: 639px) {
+				display:none;
 			}
 		}
 
@@ -2043,6 +2059,9 @@ body {
 	    .mobile_menu {
 	    	padding-top:180px;
 			@media screen and (max-width: 1300px) and (min-width: 640px) {
+				padding-top:79px;
+			}
+			@media screen and (max-width: 639px) {
 				padding-top:79px;
 			}
 	    	z-index:1; 
@@ -2306,6 +2325,59 @@ body {
 					top:50%;
 					.translate(@y:-50%);
 					background:url(../images/add_row_fixed.png) no-repeat top center;
+				}
+			}
+		}
+	}
+}
+
+/* page_bill */
+.pages {
+	.page_bill {
+		.table {
+			display:table;
+			width:100%;
+			@media screen and (max-width: 639px) {
+				display:none;
+			}
+			ul {
+				display:table-row;
+				li {
+					overflow:hidden;
+					max-width: 25%;
+					white-space:nowrap;
+					text-overflow:ellipsis;
+					padding:15px 15px 15px 15px;
+					border-bottom:1px solid #e6eff3;
+					display:table-cell;
+					font-size:14px;
+					color:#6e7376;
+					a {
+						color:#0071db;
+					}
+					&.purple {
+						color:@purple;
+					}
+					&:nth-child(1) {						
+						
+					}
+					&:nth-child(2) {
+						
+					}
+					&:nth-child(3) {
+						
+					}
+					&:nth-child(4) {
+						
+					}
+				}
+				&.thead {
+					li {
+						border-bottom:2px solid #e6eff3;
+						font-size:16px; 
+						color:#4b4d4e;
+						.semi-bold;
+					}
 				}
 			}
 		}
