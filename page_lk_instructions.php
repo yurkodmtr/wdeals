@@ -11,6 +11,9 @@
 						<div class="btnn">
 							<a href="#" class="btn btn__blue btn__small">скачать</a>
 						</div>
+						<div class="btnn__mobile">
+							<a href="#">скачать</a>
+						</div>
 					</div>
 					<div class="item">
 						<div class="text">
@@ -18,6 +21,9 @@
 						</div>
 						<div class="btnn">
 							<a href="#" class="btn btn__blue btn__small">скачать</a>
+						</div>
+						<div class="btnn__mobile">
+							<a href="#">скачать</a>
 						</div>
 					</div>
 					<div class="item">
@@ -27,6 +33,9 @@
 						<div class="btnn">
 							<a href="#" class="btn btn__blue btn__small">скачать</a>
 						</div>
+						<div class="btnn__mobile">
+							<a href="#">скачать</a>
+						</div>
 					</div>
 					<div class="item disabled">
 						<div class="text">
@@ -34,6 +43,9 @@
 						</div>
 						<div class="btnn">
 							<a href="#" class="btn btn__blue_transparent btn__small">сменить тариф</a>
+						</div>
+						<div class="btnn__mobile">
+							<a href="#">сменить тариф</a>
 						</div>
 					</div>
 				</div>

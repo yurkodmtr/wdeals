@@ -8,6 +8,8 @@
 
 <link rel="stylesheet" href="css/owl.carousel.css" />
 <link rel="stylesheet" href="css/owl.theme.default.css" />
+<link rel="stylesheet" href="css/ion.rangeSlider.css" />
+<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
 <link rel="stylesheet" href="css/main.css?v=<?php echo time();?>" />
 
 
@@ -27,6 +29,7 @@
 <script src="js/owl.carousel.js"></script>
 <script src="js/owl.navigation.js"></script>
 <script src="js/owl.autoplay.js"></script>
+<script src="js/ion.rangeSlider.js"></script>
 <script src="js/myscript.js"></script>
  
 </head>
