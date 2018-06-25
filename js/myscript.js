@@ -39,10 +39,7 @@ var myScript = function(){
 				$(this).parent().parent().removeClass('disabled');
 			}
 		});
-	} 
-
-
-	
+	} 	
 
 	$(document).ready(function(){
 		settingsOne();
@@ -67,6 +64,13 @@ var myScript = function(){
 			margin:0,
 			nav:true
 		});
+		$('.slider__page_settings_2').owlCarousel({
+			loop:true,
+			items:1,
+			margin:0,
+			nav:true
+		});
+
 	});
 
 	$(window).load(function(){
