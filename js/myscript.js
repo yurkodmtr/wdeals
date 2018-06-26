@@ -41,7 +41,27 @@ var myScript = function(){
 		});
 	} 	
 
+	var pageStatHandler = function(){
+		$('.pages .page_stat .item .title span').click(function(){
+			if ( $(this).parent().parent().hasClass('act') ) {
+				$(this).parent().parent().removeClass('act');
+				$(this).parent().next().hide();
+			} else {
+				$(this).parent().parent().addClass('act');
+				$(this).parent().next().show();
+			}
+		});
+		$('.pages .page_stat .item .descr ul li span').click(function(){
+			if ( !$(this).parent().hasClass('act') ) {				
+				var index = $(this).parent().index()+1;				
+				$(this).parent().addClass('act').siblings().removeClass('act');	
+				$('.pages .page_stat .item .descr .descr_tabs__content_'+index).addClass('act').siblings().removeClass('act');		
+			}
+		});
+	}
+
 	$(document).ready(function(){
+		pageStatHandler();
 		settingsOne();
 		menuToggle();
 		pageBillToggleItems();
