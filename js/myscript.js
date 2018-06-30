@@ -60,7 +60,26 @@ var myScript = function(){
 		});
 	}
 
+	var popupHandler = function(){
+		$('._pop_open').click(function(){
+			var name = $(this).attr('data-name');
+			$('.pop.'+name).fadeIn();
+			$('body').css({
+				'position' : 'fixed',
+				'overflow' : 'hidden', 
+			});
+		});
+		$('.pop__close').click(function(){
+			$('.pop').fadeOut();
+			$('body').css({
+				'position' : 'static',
+				'overflow' : 'visible', 
+			});
+		});
+	}
+
 	$(document).ready(function(){
+		popupHandler();
 		pageStatHandler();
 		settingsOne();
 		menuToggle();

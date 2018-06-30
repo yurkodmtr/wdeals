@@ -36,6 +36,8 @@
 </head>
 <body class="pages__body">
 
+<?php include 'popups.php'; ?>
+
 <div class="wrap">
 	<div class="pages">
 
