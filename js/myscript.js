@@ -51,11 +51,24 @@ var myScript = function(){
 				$(this).parent().next().show();
 			}
 		});
-		$('.pages .page_stat .item .descr ul li span').click(function(){
+		$('.page_stat ._item_1 .descr ul li span').click(function(){			
+			if ( $(this).parent().parent().parent().parent().parent().parent().hasClass('disabled') ) {
+				return false;
+			}
+			if ( !$(this).parent().hasClass('act') ) {							
+				var index = $(this).parent().index()+1;				
+				$(this).parent().addClass('act').siblings().removeClass('act');	
+				$('.page_stat ._item_1 .descr .descr_tabs__content_'+index).addClass('act').siblings().removeClass('act');		
+			}
+		});
+		$('.page_stat ._item_2 .descr ul li span').click(function(){
+			if ( $(this).parent().parent().parent().parent().parent().parent().hasClass('disabled') ) {
+				return false;
+			}
 			if ( !$(this).parent().hasClass('act') ) {				
 				var index = $(this).parent().index()+1;				
 				$(this).parent().addClass('act').siblings().removeClass('act');	
-				$('.pages .page_stat .item .descr .descr_tabs__content_'+index).addClass('act').siblings().removeClass('act');		
+				$('.page_stat ._item_2 .descr .descr_tabs__content_'+index).addClass('act').siblings().removeClass('act');		
 			}
 		});
 	}

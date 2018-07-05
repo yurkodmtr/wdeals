@@ -3101,14 +3101,51 @@ body {
 					&__container {
 						padding-bottom:20px;
 						.descr_tabs__content {
+							height:300px;
 							display:none;							
 							&.act {
 								display:block;
 							}
 						}
 					}
-				}
-				
+				}	
+				.disabledChart {
+					height:300px;
+					position:relative;
+					.text {
+						width: 1123px;
+    					height: 265px;
+						position:absolute;
+						left:34px;
+						top:7px;
+						background:#e6eff3;
+						text-align:center;
+						font-size:25px;
+						color:#6e7376;
+						.flex-display(@display: flex);
+						.align-items(@align:center);
+						@media screen and (max-width: 1300px) and (min-width: 640px) {
+							width:543px;
+						}
+						@media screen and (max-width: 639px) {
+							width:233px;
+							font-size:16px;
+							padding:0px 15px;
+						}
+						span {
+							display:block;
+							width:100%;
+							text-align:center;
+						}
+					}
+					&__btn {
+						padding:50px 0px 50px 0px;
+						.btn {
+							width:160px;
+							font-size:14px;
+						}
+					}
+				}			
 			}
 			&:first-child {
 				.title {
@@ -3120,6 +3157,29 @@ body {
 					span {
 						&:before {
 							.rotation(@deg:90deg);
+						}
+					}
+				}
+			}
+			&.disabled {
+				.descr {
+					&_tabs {
+						&__nav {
+							ul {
+								li {
+									span {
+										background:#e6eff3;
+										cursor:inherit;
+										color:#a4acb0;
+										border:none;
+									}
+								}
+							}
+						}
+						&__container {
+							.descr_tabs__content {
+								height:auto;
+							}
 						}
 					}
 				}

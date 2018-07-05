@@ -31,7 +31,7 @@
 <script src="js/owl.autoplay.js"></script>
 <script src="js/ion.rangeSlider.js"></script>
 <script src="js/Chart.bundle.js"></script>
-<script src="js/myscript.js"></script> 
+<script src="js/myscript.js?v=<?php echo time();?>"></script> 
  
 </head>
 <body class="pages__body">
