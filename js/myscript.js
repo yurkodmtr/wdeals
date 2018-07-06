@@ -30,7 +30,6 @@ var myScript = function(){
 
 	var settingsOne = function(){
 		$('.pages .page_settings_1 .item .switcher b').click(function(){
-			console.log(1);
 			if ( $(this).parent().hasClass('act') ) {
 				$(this).parent().removeClass('act');
 				$(this).parent().parent().addClass('disabled');
