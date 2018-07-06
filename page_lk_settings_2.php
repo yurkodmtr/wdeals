@@ -14,7 +14,7 @@
 	    					<img src="images/slider_site_4.jpg" alt="" class="slide_3">
     					</figure>
     					<div class="btn__wrap__center">
-    						<a href="#" class="btn btn__small btn__blue">выбрать этот дизайн</a>
+    						<a class="btn btn__small btn__blue _pop_open" data-name="pop_change_design">выбрать этот дизайн</a>
     					</div>
     				</div>
     				<div class="item">    					

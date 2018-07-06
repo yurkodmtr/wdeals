@@ -27,7 +27,7 @@
 							</div>
 						</div>
 						<div class="btn__wrap__center">
-							<a href="#" class="btn btn__blue">Докупить коды</a>
+							<a class="btn btn__blue _pop_open" data-name="pop_choose_code">Докупить коды</a>
 						</div>
 					</div>
 					<div class="item disabled">

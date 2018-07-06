@@ -1472,6 +1472,23 @@
                             $('.input_fix__range'+i).val(text_single);
                         }
                     }
+
+                    if ( id == 'poprange1' ) {
+                        switch (text_single) {
+                            case "0":
+                                $('.choose_code__total span').html('15 000 р.');
+                                break;
+                            case "1":
+                                $('.choose_code__total span').html('30 000 р.');
+                                break;
+                            case "2":
+                                $('.choose_code__total span').html('75 000 р.');
+                                break;
+                            case "3":
+                                $('.choose_code__total span').html('100 000 р.');
+                                break;
+                        }                        
+                    }
                 } else {
                     from_pretty = this._prettify(this.result.from);
                     text_single = this.decorate(from_pretty, this.result.from);
@@ -1482,7 +1499,23 @@
                         if ( id == 'range'+i ) {
                             $('.input_fix__range'+i).val(text_single);
                         }
-                    }                    
+                    } 
+                    if ( id == 'poprange1' ) {
+                        switch (text_single) {
+                            case "0":
+                                $('.choose_code__total span').html('15 000 р.');
+                                break;
+                            case "1":
+                                $('.choose_code__total span').html('30 000 р.');
+                                break;
+                            case "2":
+                                $('.choose_code__total span').html('75 000 р.');
+                                break;
+                            case "3":
+                                $('.choose_code__total span').html('100 000 р.');
+                                break;
+                        }                        
+                    }                   
                 }
 
                 this.calcLabels();

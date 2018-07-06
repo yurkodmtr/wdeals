@@ -82,7 +82,7 @@ var myScript = function(){
 				'overflow' : 'hidden', 
 			});
 		});
-		$('.pop__close').click(function(){
+		$('.pop__close, ._pop_close').click(function(){
 			$('.pop').fadeOut();
 			$('body').css({
 				'position' : 'static',

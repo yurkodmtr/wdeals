@@ -33,11 +33,9 @@
                                         <span class="small">год</span>
                                     </li>
                                 </ul>
-                                <div class="range">
-                                    <input type="text" id="range1" value="" name="range1" />
-                                </div>
                                 <div class="date_picker">
-                                    date
+                                    <input type="text" id="datepicker_from" class="datepicker" placeholder="С"> - 
+                                    <input type="text" id="datepicker_to" class="datepicker" placeholder="По">
                                 </div>
                             </div>
                             <div class="descr_tabs__container">
@@ -92,7 +90,8 @@
                                     </li>
                                 </ul>
                                 <div class="date_picker">
-                                    date
+                                    <input type="text" class="datepicker" placeholder="С" disabled="true"> - 
+                                    <input type="text" class="datepicker" placeholder="По" disabled="true">
                                 </div>
                             </div>
                             <div class="descr_tabs__container">
@@ -108,23 +107,20 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-
-
-
-                           
-                                             
+                        </div>              
                     </div>
                 </div>
-				
-				
+                
 			</div>
 		</div>
 
 <?php include 'lk_footer.php'; ?>
 
 <script>
+$(function() {
+    $( "#datepicker_from" ).datepicker();
+    $( "#datepicker_to" ).datepicker();
+});
 var disabledChart = new Chart($('#disabledChart'), {
     type: 'line',
     data: {
