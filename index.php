@@ -32,16 +32,65 @@
 </head>
 <body>
 
+ 
+<?php include 'popups.php'; ?>
+
 <div class="wrap">
 	<div class="index_page">
 
-		<!-- <header class="header">
-			<div class="center clearfix">
-				<a href="#" class="logo">
-					<img src="images/header_logo.png" alt="">
-				</a>
+		<header class="header">
+			<div class="header__shadow">
+				<div class="center clearfix">
+					<a href="#" class="logo">
+						<img src="images/logo.png" alt="">
+					</a>
+					<div class="phone">
+						8-800-355-46-57
+					</div>
+					<ul class="nav">
+						<li><a href="#simple">Виджет</a></li>
+						<li><a href="#slider_site">Дизайн</a></li>
+						<li><a href="#result">Кейсы</a></li>
+						<li><a href="#plans">Тарифы</a></li>
+						<li><a href="#footer">Контакты</a></li>
+					</ul>
+					<a class="signup btn btn__blue _pop_open" data-name="pop_registation">
+						Регистрация
+					</a>
+					<a class="login _pop_open" data-name="pop_login_1">
+						Войти
+					</a>					
+					<div class="mobile_menu_toggle">
+						<i></i>
+					</div>
+				</div>
 			</div>
-		</header> -->
+			
+			<div class="mobile_menu">
+				<div class="mobile_menu__top">
+					8-800-355-46-57
+				</div>
+				<div class="mobile_menu__mid">
+					<ul>						 
+						<li><a href="#simple">Виджет</a></li>
+						<li><a href="#slider_site">Дизайн</a></li>
+						<li><a href="#result">Кейсы</a></li>
+						<li><a href="#plans">Тарифы</a></li>
+						<li><a href="#footer">Контакты</a></li>
+					</ul>	
+				</div>
+				<div class="mobile_menu__bottom _pop_open" data-name="pop_login_1">
+					<a href="#">
+						Войти
+					</a>
+				</div>
+				<div class="mobile_menu__bottom mobile_menu__bottom__signup _pop_open" data-name="pop_registation">
+					<a href="#">
+						Регистрация
+					</a>
+				</div>
+			</div>			
+		</header>
 		
 		<!-- welcome -->
 		<div class="welcome">
@@ -84,25 +133,37 @@
 						<div class="title">
 							Попробуйте месяц <span>бесплатно</span>
 						</div>
-						<div class="form__row">
-							<input type="text" placeholder="Ваше имя" class="input error">
-						</div>
-						<div class="form__row">
-							<input type="text" placeholder="Телефон для связи" class="input">
-						</div>
-						<div class="form__row">
-							<input type="text" placeholder="E-mail для связи" class="input">
-						</div>
-						<div class="form__row">
-							<input type="text" placeholder="Сайт для подключения виджета" class="input">
-						</div>
-						<div class="form__row form__row__submit">
-							<input type="submit" value="Подключить бесплатно" class="btn btn__medium btn__purple submit">
-						</div>
-						<div class="form__row form__row__notice">
+                        <div class="form__row error">
+                            <div class="error_text">Some error</div>
+                            <input type="text" placeholder="Ваше имя" class="input">
+                        </div>
+                        <div class="form__row">
+                            <div class="error_text">Some error</div>
+                            <input type="text" placeholder="Телефон для связи" class="input">
+                        </div>
+                        <div class="form__row error">
+                            <div class="error_text">Some error</div>
+                            <input type="text" placeholder="E-mail для связи" class="input">
+                        </div>
+                        <div class="form__row">
+                            <div class="error_text">Some error</div>
+                            <input type="text" placeholder="Сайт для подключения виджета" class="input">
+                        </div>
+                        <div class="form__row">
+                            <div class="error_text">Some error</div>
+                            <input type="password" placeholder="Пароль" class="input">
+                        </div>
+                        <div class="form__row">
+                            <div class="error_text">Some error</div>
+                            <input type="password" placeholder="Пароль еще раз" class="input">
+                        </div>
+                        <div class="form__row form__row__submit">
+                            <input type="submit" value="зарегистрироваться" class="btn btn__medium btn__purple submit">
+                        </div>
+                        <div class="form__row form__row__notice">
 							Отправляя заявку, вы соглашаетесь на обработку ваших персональных данных
 						</div>
-					</form>
+                    </form>
 				</div>
 				
 			</div>
@@ -110,7 +171,7 @@
 			<div class="center">
 				<div class="show_registration_popup">
 					<div class="btn__wrap__center">
-						<span class="btn btn__medium btn__purple">Подключить бесплатно</span>
+						<span class="btn btn__medium btn__purple _pop_open" data-name="pop_registation">Подключить бесплатно</span>
 					</div>
 					<div class="notice">
 						Отправляя заявку, вы соглашаетесь на обработку ваших персональных данных
@@ -120,7 +181,7 @@
 		</div>
 
 		<!-- simple -->
-		<div class="simple">
+		<div class="simple" id="simple">
 			<div class="center">
 				<h2>Просто и эффективно</h2>
 				<div class="item__list clearfix">
@@ -151,7 +212,7 @@
 					</div>
 				</div>
 				<div class="btn__wrap__center">
-					<a href="#" class="btn btn__medium btn__purple">Подключить бесплатно</a>
+					<a href="#" class="btn btn__medium btn__purple _pop_open" data-name="pop_registation">Подключить бесплатно</a>
 				</div>
 			</div>
 		</div>
@@ -169,13 +230,13 @@
 					Стабильно работает на платформах, популярных шаблонах и сайтах собственной разработки.
 				</div>
 				<div class="btn__wrap__center">
-					<a href="#" class="btn btn__medium btn__purple">Подключить бесплатно</a>
+					<a href="#" class="btn btn__medium btn__purple _pop_open" data-name="pop_registation">Подключить бесплатно</a>
 				</div>
 			</div>
 		</div>
 
 		<!-- slider_site -->
-		<div class="slider_site">
+		<div class="slider_site" id="slider_site">
 			<div class="center">
 				<h2>Подойдёт вашему сайту</h2>
 				<div class="owl-carousel slider_site__carousel">
@@ -199,13 +260,13 @@
     				</div>
     			</div>
     			<div class="btn__wrap__center">
-    				<a href="#" class="btn btn__medium btn__purple">Подключить бесплатно</a>
+    				<a href="#" class="btn btn__medium btn__purple _pop_open" data-name="pop_registation">Подключить бесплатно</a>
     			</div>
 			</div>
 		</div>
 
 		<!-- result -->
-		<div class="result">
+		<div class="result" id="result">
 			<div class="center">
 				<h2>Реальный результат</h2>
 				<div class="owl-carousel slider_result">
@@ -271,13 +332,13 @@
     				</div>
     			</div>
     			<div class="btn__wrap__center">
-    				<a href="#" class="btn btn__medium btn__purple">Подключить бесплатно</a>
+    				<a href="#" class="btn btn__medium btn__purple _pop_open" data-name="pop_registation">Подключить бесплатно</a>
     			</div>
 			</div>
 		</div>
 
 		<!-- plans -->
-		<div class="plans">
+		<div class="plans" id="plans">
 			<div class="center">
 				<h2>Гибкие тарифы</h2>
 				<div class="plans_1">
@@ -296,10 +357,10 @@
 							<li>Защита от мошенничества</li>
 						</ul>
 						<div class="btn__wrap__center">
-							<a href="#" class="btn btn__small btn__purple">Подключить бесплатно</a>
+							<a href="#" class="btn btn__small btn__purple _pop_open" data-name="pop_registation">Подключить бесплатно</a>
 						</div>
 						<div class="btn__fix">
-							<a href="#">Подключить бесплатно</a>
+							<a class="_pop_open" data-name="pop_registation">Подключить бесплатно</a>
 						</div>
 					</div>
 					<div class="item item__type_2">
@@ -317,10 +378,10 @@
 							<li>Персональный менеджер</li>							
 						</ul>
 						<div class="btn__wrap__center">
-							<a href="#" class="btn btn__small btn__white_transparent">Подключить бесплатно</a>
+							<a href="#" class="btn btn__small btn__white_transparent _pop_open" data-name="pop_registation">Подключить бесплатно</a>
 						</div>
 						<div class="btn__fix">
-							<a href="#">Подключить бесплатно</a>
+							<a class="_pop_open" data-name="pop_registation">Подключить бесплатно</a>
 						</div>
 					</div>
 					<div class="item item__type_1">
@@ -337,10 +398,10 @@
 							<li>Персональный менеджер</li>
 						</ul>
 						<div class="btn__wrap__center">
-							<a href="#" class="btn btn__small btn__purple">Подключить бесплатно</a>
+							<a href="#" class="btn btn__small btn__purple _pop_open" data-name="pop_registation">Подключить бесплатно</a>
 						</div>
 						<div class="btn__fix">
-							<a href="#">Подключить бесплатно</a>
+							<a class="_pop_open" data-name="pop_registation">Подключить бесплатно</a>
 						</div>
 					</div>
 				</div>
@@ -361,7 +422,7 @@
 								<li>Защита от мошенничества</li>
 							</ul>
 							<div class="btn__fix">
-								<a href="#">Подключить бесплатно</a>
+								<a class="_pop_open" data-name="pop_registation">Подключить бесплатно</a>
 							</div>
 						</div>
 					</div>
@@ -381,7 +442,7 @@
 								<li>Персональный менеджер</li>							
 							</ul>
 							<div class="btn__fix">
-								<a href="#">Подключить бесплатно</a>
+								<a class="_pop_open" data-name="pop_registation">Подключить бесплатно</a>
 							</div>
 						</div>
 					</div>
@@ -400,7 +461,7 @@
 								<li>Персональный менеджер</li>
 							</ul>
 							<div class="btn__fix">
-								<a href="#">Подключить бесплатно</a>
+								<a class="_pop_open" data-name="pop_registation">Подключить бесплатно</a>
 							</div>
 						</div>
 					</div>
@@ -408,7 +469,7 @@
 			</div>
 		</div>
 
-		<div class="footer">
+		<div class="footer" id="footer">
 			<div class="center">
 				<div class="footer__top clearfix">
 					<div class="left_side">
@@ -449,10 +510,12 @@
 							<div class="title">
 								Закажите <span>обратный звонок</span>
 							</div>
-							<div class="form__row">
+							<div class="form__row error">
+								<div class="error_text">Some error</div>
 								<input type="text" placeholder="Ваше имя" class="input error">
 							</div>
 							<div class="form__row">
+								<div class="error_text">Some error</div>
 								<input type="text" placeholder="Телефон для связи" class="input">
 							</div>							
 							<div class="form__row form__row__submit">

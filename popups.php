@@ -1,4 +1,4 @@
-<div class="pop pop_registation">
+<div class="pop pop_registation"> 
     <div class="table">
         <div class="table-cell">
             <div class="pop__content">
