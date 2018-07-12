@@ -6,9 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="stylesheet" href="css/datepicker.css" />
 <link rel="stylesheet" href="css/owl.carousel.css" />
 <link rel="stylesheet" href="css/owl.theme.default.css" />
-<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/ion.rangeSlider.css" />
+<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
+<link rel="stylesheet" href="css/main.css?v=<?php echo time();?>" />
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -23,11 +26,13 @@
  </a>
  </div>
  <![endif]-->
- 
+ <script src="js/datepicker.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/owl.navigation.js"></script>
 <script src="js/owl.autoplay.js"></script>
-<script src="js/myscript.js"></script>
+<script src="js/ion.rangeSlider.js"></script>
+<script src="js/Chart.bundle.js"></script>
+<script src="js/myscript.js?v=<?php echo time();?>"></script> 
  
 </head>
 <body>
