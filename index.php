@@ -4,7 +4,7 @@
 <title>Home</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 <link rel="stylesheet" href="css/datepicker.css" />
 <link rel="stylesheet" href="css/owl.carousel.css" />
@@ -111,7 +111,7 @@
 								<img src="images/index_welcome_icon_1.png" alt="">
 							</figure>
 							<div class="descr">
-								Повысит конверсию в покупку
+								Повысит конверсию<br/>в покупку
 							</div>
 						</div>
 						<div class="item">
