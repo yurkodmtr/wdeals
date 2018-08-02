@@ -9,14 +9,16 @@ module.exports = function (grunt) {
               optimization: 2
             },
             files: {
-              "css/main.css": "less/design.less"
+              "css/main.css": "less/design.less",
+              "css/widget.css": "less/widget.less",
             }
           }
         },
         watch: {
             default: {
                 files: [
-                    'less/design.less'
+                    'less/design.less',
+                    'less/widget.less',
                 ],
                 tasks: ['build'],
                 options: {
